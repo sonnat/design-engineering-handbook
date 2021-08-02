@@ -331,11 +331,31 @@ footer {
     transition: 360ms ease;
 }
 
+.footer_content a path {
+    fill-opacity: 0.32;
+}
+
+
 .footer_content a:hover path {
     fill-opacity: 0.56;
 }
-
-.brand {
+.footer_brand_links{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+            gap: 2rem;
+}
+.footer_brand {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -351,12 +371,57 @@ footer {
             justify-content: flex-start;
 }
 
+.footer_links{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;  
+            gap:1rem;
+}
+
+.footer_socials{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;  
+            gap: 0.5rem;
+}
+
 .vertical_divider {
     width: 1px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0.08);
-    margin: 0px 16px;
-}
+ }
+
+.footer_social{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+
+
+
 
 .translators {
     width: 100%;
@@ -414,7 +479,24 @@ footer {
     background-image: url(../img/mahdi.JPG);
 }
 
-@media only screen and (max-width: 840px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 960px) {
     .main {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
@@ -529,7 +611,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 640px) {
     .download_row {
         width: 100%;
         height: auto;
